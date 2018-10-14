@@ -1,8 +1,8 @@
 /****************************************************************
- * Name        :                                                *
+ * Name        : Hashim Jacobs                                  *
  * Class       : CSC 415                                        *
- * Date        :                                                *
- * Description :  Writting a simple bash shell program          *
+ * Date        : 10/5/2018                                      *
+ * Description :  Writing a simple bash shell program           *
  *                that will execute simple commands. The main   *
  *                goal of the assignment is working with        *
  *                fork, pipes and exec system calls.            *
@@ -17,12 +17,24 @@
 #include <fcntl.h>
 
 #define BUFFERSIZE 256
-#define PROMPT "myShell >> "
+#define PROMPT "MyShell => "
 #define PROMPTSIZE sizeof(PROMPT)
+#define EXIT "exit\n"
 
 int main(int* argc, char** argv)
 {
+  char COMMAND[BUFFERSIZE];
+  char* buffer;
+  char* directory;
 
+printf("*************TERMINAL*************\n");
+
+do
+{
+  printf(PROMPT);
+  scanf("%s",COMMAND);
+  printf("%s\n",COMMAND);
+} while(COMMAND!=EXIT);
     
 return 0;
 }
