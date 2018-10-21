@@ -4,8 +4,8 @@
 
 ## Student ID: 916551615
 
-## Build Instructions
+## Build Instructions: Simply type in "make" into command line
 
-## Run Instructions
+## Run Instructions: Enter ./myshell
 
 ## List Extra Credits comepleted (if non attempted leave blank)
