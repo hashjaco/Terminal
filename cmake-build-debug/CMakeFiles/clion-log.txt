@@ -1,4 +1,11 @@
-/home/granulargodd/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4892.24/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/granulargodd/Documents/csc415/csc415-p3-hashjaco
+"/Users/hashimjacobs/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.3911.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -G "CodeBlocks - Unix Makefiles" "/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco"
+-- The C compiler identification is AppleClang 10.0.0.10001044
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug
+-- Build files have been written to: /Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug

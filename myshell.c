@@ -8,7 +8,6 @@
  *                fork, pipes and exec system calls.            *
  ****************************************************************/
 
-#define _GNU_SOURCE
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -17,7 +16,9 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/wait.h>
+#include "shellcommands.h"
 
+#define _GNU_SOURCE
 #define BUFFER_SIZE 256
 #define PROMPT "MyShell => "
 
@@ -27,6 +28,7 @@ int main(int argc, char*argv[])
   const char delimiter[2] = " ";
   char * buffer;
   char * directory;
+  int status;
   argc = 0;
 
   printf("*************TERMINAL*************\n");
@@ -35,28 +37,39 @@ int main(int argc, char*argv[])
   {
     printf(PROMPT); // Prompt for input
     fgets(COMMAND,BUFFER_SIZE,stdin); // Get user input
-    printf("%s",COMMAND); // Print user input
+    printf("%s\n",COMMAND); // Print user input
     if (strcmp(COMMAND,"exit\n")==0) exit(1); // Exit if user input = exit
-      *argv = strtok(COMMAND,delimiter);
-      ++argc;
+    *argv = strtok(COMMAND,delimiter); // Parse string into array
     while(*argv!=NULL){
-      *argv = strtok(NULL,delimiter);
-      }
-      printf("%d",argc);
+        ++argc;
+        *argv = strtok(NULL,delimiter);
+        printf("%s\n",*argv);
+    }
+      printf("%d\n",argc);
 
-
-      pid_t process = fork(); // Create child process
+      pid_t parent, child;
+      child = fork(); // Create child process
       // parent wait for child to return execution
       // Create pipe between child and parent process
       // Child process should execute command and return output to parent process before being freed
-      if (child_process < 0)
+      if (child < 0) // Fork failed
       {
           perror("Fork failed\n"); exit(-1); // Error message
       }
-      pid_t pipeBetweenProcesses[2] = {child_process,parent_process};
-      pipe2(pipeBetweenProcesses,O_CLOEXEC);
+      else if (child == 0) // Child process
+      { 
+        if (execvp(argv[0],argv) == -1) perror("Error executing program.\n");
+        printf("Child process is executing command...\n"); 
+        sleep(5); 
+        printf("Child process has finished executing.\n");
+        exit(EXIT_FAILURE);
+      }
+      else { // Parent process
+        do {
+          parent = waitpid(child, &status, WUNTRACED);
+        } while(!WIFEXITED(status) && !WIFSIGNALED(status));
+      }
       
-
   }
-
+  return 1;
 }

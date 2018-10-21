@@ -8,85 +8,85 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug"/>
+				<Option working_dir="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug"/>
+				<Option working_dir="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug"/>
+				<Option working_dir="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="csc415_p3_hashjaco">
-				<Option output="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/csc415_p3_hashjaco" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug"/>
+				<Option output="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug/csc415_p3_hashjaco" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/."/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 csc415_p3_hashjaco"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 csc415_p3_hashjaco"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="csc415_p3_hashjaco/fast">
-				<Option output="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/csc415_p3_hashjaco" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug"/>
+				<Option output="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug/csc415_p3_hashjaco" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/."/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 csc415_p3_hashjaco/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 csc415_p3_hashjaco/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/hashimjacobs/OneDrive/Documents/CSC/CSC\ 415/csc415-p3-hashjaco/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/myshell.c">
+		<Unit filename="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/myshell.c">
 			<Option target="csc415_p3_hashjaco"/>
 		</Unit>
-		<Unit filename="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/shellcommands.h">
+		<Unit filename="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/shellcommands.h">
 			<Option target="csc415_p3_hashjaco"/>
 		</Unit>
-		<Unit filename="/home/granulargodd/Documents/csc415/csc415-p3-hashjaco/CMakeLists.txt">
+		<Unit filename="/Users/hashimjacobs/OneDrive/Documents/CSC/CSC 415/csc415-p3-hashjaco/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

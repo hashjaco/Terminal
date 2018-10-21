@@ -6,7 +6,5 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(csc415_p3_hashjaco
-        shellcommands.h
-        myshell.c)
-
-
+    myshell.c
+    shellcommands.h)
