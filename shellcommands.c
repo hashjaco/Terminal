@@ -58,13 +58,14 @@ char *myshell_read_input(void)
 	char *input = NULL;
 	ssize_t buffer_size = 0;
     getline(&input, &buffer_size, stdin); // Get user input
-    printf("Reading input...\n"); sleep(5);
+    if (strcmp(input,"exit\n") == 0) exit(1);
+    printf("Reading input...\n"); sleep(1);
 	return input;
 }
 
 char **myshell_parse_input(char * input)
 {
-	printf("Parsing input...\n"); sleep(5);
+	printf("Parsing input...\n"); sleep(1);
 	int buffer_size = BUFFER_SIZE, position = 0;
 	char **tokens = malloc(buffer_size * sizeof(char*));
 	char *token;
@@ -96,18 +97,29 @@ char **myshell_parse_input(char * input)
 
 int myshell_launch(char **args)
 {
-	printf("Launching program...\n"); sleep(5);
+	printf("Launching program...\n"); sleep(2);
 	pid_t parent, child;
-	int status;
-	child = fork(); // Create child process
+	int status, pid;
+	 pid = fork(); // Create child process
 	  // parent wait for child to return execution
 	  // Create pipe between child and parent process
 	  // Child process should execute command and return output to parent process before being freed
-	  
-	  if (child == 0) // Child process
+	  pid_t pipeline[2] = {child, parent};
+	  pipe(pipeline);
+	  if (pid == 1) // Child process
 	  { 
-	    if (strcmp(args[0],"cd")==0) {
-	       if (chdir(args[1]) < 0){printf("Directory not found.");}
+	    child = getpid();
+	    parent = getppid();
+	    pid_t pipeline[2] = {child, parent};
+	    if (pipe(pipeline) < 0)
+	    { 
+	       printf("Pipe failed\n"); exit(-1);
+	    }
+	    if (strcmp(args[0],"cd")==0) 
+	    {
+	       if (chdir(args[1]) < 0){
+		       printf("Directory not found."); exit(-1);
+	       }
 	    }
 	    char* file = strcat("/bin/",args[0]);
 	    if (execvp(file, args) < 0)
@@ -119,12 +131,13 @@ int myshell_launch(char **args)
 	    printf("Child process has finished executing.\n");
 	    exit(EXIT_FAILURE);
 	  }
-	  else if (child < 0)
+	  else if (pid < 0)
 	  {
 	    printf("There was an error forking\n"); exit(-1);		  
 	  }
 	  else 
-	  { 
+	  {
+            printf("I'm the parent\n");
 	  // Parent process
 	    do 
 	    {
