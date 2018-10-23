@@ -1,8 +1,9 @@
 #include "shellcommands.h"
 
-int main(int argc, char **argv){
+int main(int argc, char **argv)
+{
+// Begin terminal loop
+	myshell_loop(argv);
 
-	myshell_loop();
-
-	return EXIT_SUCCESS;
+	return 0;
 }

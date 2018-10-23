@@ -1,6 +1,7 @@
 #ifndef SHELLCOMMANDS_H
 #define SHELLCOMMANDS_H
 
+void myshell_loop(char **args);
 int myshell_launch(char **args);
 char **myshell_parse_input(char * input);
 char *myshell_read_input(void);
