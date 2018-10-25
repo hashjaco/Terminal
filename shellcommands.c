@@ -23,7 +23,10 @@ typedef struct Built_in {
 Built_in built_ins[] = {
 	{"cd", &myshell_cd},
 	{"pwd", &myshell_pwd},
-	{"exit", &myshell_exit}
+	{"exit", &myshell_exit},
+	{">>", &myshell_redirectO},
+	{"<<", &myshell_redirectI},
+	{"|", &myshell_pipe}
 };
 
 int number_of_builtins()
@@ -151,6 +154,12 @@ int myshell_pwd(char **args)
 	free(buffer);
 	return 1;
 }
+
+int myshell_redirectO(char **args){return 1;}
+
+int myshell_redirectI(char **args){return 1;}
+
+int myshell_pipe(char **args){return 1;}
 
 int myshell_exit(char **args) { 
 	return 0; 
