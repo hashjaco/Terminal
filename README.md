@@ -1,11 +1,9 @@
-# CSC 415 - Project 3 - My Shell
+# My_Shell
 
-## Student Name: Hashim Jacobs
+## Author: Hashim Jacobs
 
-## Student ID: 916551615
+My_Shell is a command line terminal built from scratch in C, using low-level system calls to navigate and manipulate file system. It is NOT fully secured, so I don't recommend using this as an alternative to your computer's built-in shell.
 
-## Build Instructions: Simply type in "make" into command line
+## Build Instructions: Simply type "make" into command line
 
 ## Run Instructions: Enter ./myshell
-
-## List Extra Credits comepleted (if non attempted leave blank)
